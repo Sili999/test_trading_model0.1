@@ -1,11 +1,10 @@
 import tkinter as tk
-from app import App
+from app import StockSearchApp
 
 def main():
     root = tk.Tk()
-    root.title("Stock Search Application")
-    app = App(root)
-    root.mainloop()
+    app = StockSearchApp(root)
+    app.run()
 
 if __name__ == "__main__":
     main()

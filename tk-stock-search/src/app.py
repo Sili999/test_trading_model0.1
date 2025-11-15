@@ -6,9 +6,10 @@ class StockSearchApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Stock Search Application")
-        self.root.geometry("800x600")
+        self.root.geometry("1000x700")
         
         self.main_window = MainWindow(self.root)
+        self.main_window.pack(fill=tk.BOTH, expand=True)
 
     def run(self):
         self.root.mainloop()
